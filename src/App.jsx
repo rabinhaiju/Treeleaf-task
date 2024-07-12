@@ -8,7 +8,7 @@ import Details from './components/Details';
 
 
 function App() {
-  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true');
+  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('darkMode') === 'true' || true);
  
   useEffect(() => {
     if (darkMode) {
